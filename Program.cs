@@ -1,6 +1,7 @@
 
 using Microsoft.EntityFrameworkCore;
 using Scalar.AspNetCore;
+using System;
 using WebApiProdutos.Data;
 
 namespace WebApiProdutos
@@ -39,6 +40,9 @@ namespace WebApiProdutos
             app.MapControllers();
 
             app.Run();
+
+           
         }
     }
+    
 }
