@@ -41,7 +41,13 @@ namespace WebApiProdutos
 
             app.Run();
 
-           
+            // rota de teste que vai quebrar intencionalmente
+            app.MapGet("/teste-quebra", () =>
+            {
+                throw new Exception("Teste de falha intencional");
+            });
+
+
         }
     }
     
